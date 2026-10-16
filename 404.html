@@ -103,7 +103,7 @@
       // real (checksum + schema) before anything connects.
       (function () {
         var m = window.location.pathname.match(
-          /\/uni-wallet-links\/pair\/v1\/([A-Za-z0-9_\-]+)\.([0-9a-f]{8})$/,
+          /\/pair\/v1\/([A-Za-z0-9_\-]+)\.([0-9a-f]{8})$/,
         );
         if (m === null) return;
         document.getElementById("open").href = "uniwallet://pair/v1/" + m[1] + "." + m[2];
